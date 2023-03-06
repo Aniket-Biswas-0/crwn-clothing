@@ -1,9 +1,9 @@
-.sign-up-container {
+.sign-in-container {
     display: flex;
     flex-direction: column;
     width: 380px;
-    color: aliceblue;
-    text-shadow: 2px -1px 5px black;
+    text-shadow: -2px -1px 5px black;
+    color: white;
 
     h2 {
         font-family: 'Carter One';
@@ -15,4 +15,10 @@
         font-family: 'Carter One';
         font-size: 20px;
     }
+
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }

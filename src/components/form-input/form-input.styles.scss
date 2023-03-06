@@ -1,19 +1,23 @@
-$sub-color: grey;
-$main-color: black;
+$sub-color: rgb(255, 255, 255);
+$main-color: #202731;
 
 @mixin shrinkLabel {
   top: -14px;
   font-size: 12px;
-  color: $main-color;
+  color: $sub-color;
 }
 
 .group {
   position: relative;
   margin: 45px 0;
+  background: none;
+  font-family: 'Carter One';
+  font-size: 17px;
 
   .form-input {
     background: none;
-    background-color: white;
+    background-color: none;
+    
     color: $sub-color;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
@@ -28,7 +32,7 @@ $main-color: black;
       outline: none;
     }
 
-    &:focus ~ .form-input-label {
+    &:focus~.form-input-label {
       @include shrinkLabel();
     }
   }
@@ -39,7 +43,7 @@ $main-color: black;
 
   .form-input-label {
     color: $sub-color;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
